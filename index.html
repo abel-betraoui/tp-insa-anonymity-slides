@@ -14404,7 +14404,7 @@ div.jp-OutputPrompt {
 <li><strong>directement</strong> (exemple : nom et prénom) ;</li>
 <li><strong>indirectement</strong> (exemple : par un numéro de téléphone ou de plaque d’immatriculation, un identifiant tel que le numéro de sécurité sociale, une adresse postale ou courriel, mais aussi la voix ou l’image).</li>
 </ul>
-<p><img src="images/bored_resized.gif" alt="bored"></p>
+<p><img src="images/bored_resized.gif" width="240" alt="bored"  align="center"/></p>
 
 </div>
 </div></section><section>
@@ -14518,8 +14518,13 @@ Ce sont des informations qui révèlent la prétendue <strong>origine raciale ou
 <li>exemple de données qui pourraient être obtenues illégalement si elles étaient compromises : <a href="https://www.reuters.com/investigates/special-report/tobacco-iqos-device/">https://www.reuters.com/investigates/special-report/tobacco-iqos-device/</a>. </li>
 </ul>
 <p><img src="images/ecig_reuters.png" alt="reuters_article"></p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Vous saurez trouver à partir d'une recherche sur votre moteur préféré des fabricants de cigarettes électroniques européens &amp; français qui collectent également beaucoup d'informations sur leur clients.</li>
+<li>Vous saurez trouver à partir d'une recherche sur votre moteur préféré des fabricants de cigarettes électroniques européens &amp; français qui collectent suffisamment de données sur leur clients pour servir de base d'indentification.</li>
 </ul>
 
 </div>
@@ -14671,68 +14676,60 @@ had reported characteristics that likely made them unique based only on {5-digit
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="k-anonymisation">k-anonymisation<a class="anchor-link" href="#k-anonymisation">&#182;</a></h1><p>Réduire le niveau de détail des données de telle sorte qu’il y a au moins kn-uplets différents qui ont la même valeur de quasi-identifiant</p>
-<p>une chance sur k qu’on a bien lié un individu donné avec son n-uplet anonyme</p>
-<p>There are two common methods for achieving k-anonymity for some value of k.</p>
-<p>Suppression: In this method, certain values of the attributes are replaced by an asterisk '<em>'. All or some values of a column may be replaced by '</em>'. In the anonymized table below, we have replaced all the values in the 'Name' attribute and all the values in the 'Religion' attribute with a '*'.
-Generalization: In this method, individual values of attributes are replaced with a broader category. For example, the value '19' of the attribute 'Age' may be replaced by ' ≤ 20', the value '23' by '20 &lt; Age ≤ 30' , etc.</p>
-<p><a href="http://pages.cs.wisc.edu/~lefevre/MultiDim.pdf">http://pages.cs.wisc.edu/~lefevre/MultiDim.pdf</a>
-<a href="https://github.com/qiyuangong/Mondrian">https://github.com/qiyuangong/Mondrian</a></p>
+<h1 id="k-anonymisation">k-anonymisation<a class="anchor-link" href="#k-anonymisation">&#182;</a></h1><ul>
+<li><p>Réduire "le niveau de détail des données" de telle sorte qu’il y ait au moins k n-uplets différents qui ont la même valeur de quasi-identifiant. On parle alors de <strong>classe d'équivalence</strong>.</p>
+</li>
+<li><p>Deux mécanismes principaux permettent de k-anonymiser:</p>
+<ul>
+<li><strong>Suppression</strong>: On supprime certaines variables qui qualifient un individu (si on peut se le permettre).</li>
+<li><strong>Généralisation</strong>: On regroupe certaines valeurs de variables.  </li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1 Re-identify a specific individual (known as the prosecutor re-identification scenario). The intruder (e.g., a prosecutor) would know that a particular individual (e.g., a defendant) exists in an anonymized database and wishes to find out which record belongs to that individual.</p>
-<p>2 Re-identify an arbitrary individual (known as the journalist re-identification scenario). The intruder does not care which individual is being re-identified, but is only interested in being able to claim that it can be done. In this case the intruder wishes to re-identify a single individual to discredit the organization disclosing the data.</p>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Problemes">Problemes<a class="anchor-link" href="#Problemes">&#182;</a></h2><ul>
-<li>Problème NP-Hard (heuristique: k-optimize): être capable de déterminer les généralisations à effectuer pour produire les quasi-identifiants, ce qui peut être fait soit par un expert humain qui connaît le domaine, ou bien par un calcul informatique, souvent très coûteux pour une base de données réelle.</li>
+<h2 id="Les-limites-de-la-K-anonymisation">Les limites de la K-anonymisation<a class="anchor-link" href="#Les-limites-de-la-K-anonymisation">&#182;</a></h2><h3 id="Techniques">Techniques<a class="anchor-link" href="#Techniques">&#182;</a></h3><ul>
+<li><p>K-anonymiser un jeu de données est un problème <strong>NP-Difficile</strong>: déterminer les généralisations à effectuer pour produire les quasi-identifiants (par un expert humain qui connaît le domaine ou automatiquement) est souvent très coûteux. Il existe des heuristiques sans garantie d'optimalité.</p>
+</li>
+<li><p>Du fait de la combinatoire, la K-anonymization ne sera pas envisagable pour des jeux de données présentant un nombre de variables important et/ou un nombre d'individus faible.</p>
+</li>
 </ul>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Homogeneity Attack: This attack leverages the case where all the values for a sensitive value within a set of k records are identical. In such cases, even though the data has been k-anonymized, the sensitive value for the set of k records may be exactly predicted.</li>
+<h3 id="Exploitation-des-donn&#233;es">Exploitation des donn&#233;es<a class="anchor-link" href="#Exploitation-des-donn&#233;es">&#182;</a></h3><ul>
+<li>La K-anonymisation déforme la distribution des données. En particulier, en généralisant de manière disproportionnée les variables associées à des individus isolés.</li>
 </ul>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Attaques-pour-permettre-une-r&#233;identification">Attaques pour permettre une r&#233;identification<a class="anchor-link" href="#Attaques-pour-permettre-une-r&#233;identification">&#182;</a></h3><p>Par inférence, on peut déduire les valeurs sensibles d'un individu à partir de sa classe d'équivalence, avec ou sans information additionnelles.</p>
 <ul>
-<li>Background Knowledge Attack: This attack leverages an association between one or more quasi-identifier attributes with the sensitive attribute to reduce the set of possible values for the sensitive attribute. For example, Machanavajjhala, Kifer, Gehrke, and Venkitasubramaniam (2007) showed that knowing that heart attacks occur at a reduced rate in Japanese patients could be used to narrow the range of values for a sensitive attribute of a patient's disease.</li>
+<li><p><strong>Homogeneity Attack</strong>: Cette attaque se base sur le simple fait que si toutes les valeurs sensibles associées à une classe d'équivalence sont identiques, il est possible de prédire la valeur de la donnée sensible associée au groupe malgré la K-anonymisation.</p>
+</li>
+<li><p><strong>Background Knowledge Attack</strong>: Cette attaque utilise une association connue entre une variable ou un ensemble de variables et la valeur sensible (ex: les patients japonais ont une prévalence de maladie cardiaque faible) pour réduire le nombre de valeurs sensibles possibles associées à un patient et augmenter la probabilité de réidentification.</p>
+</li>
+<li><p><strong>Information négative</strong>: On peut exclure tout un ensemble de valeurs associées à un individu dans un jeu  de données k-anonymisé.</p>
+</li>
 </ul>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>certaine quantité d’information sera déjà dévoilée, en particulier de l’information négative : si on connaît le quasi-identifiant d’une personne, on pourra exclure tout un ensemble de valeurs, ou bien savoir qu’elle a de plus grandes chances d’avoir une certaine valeur sensible. (inférence)</li>
-</ul>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>K-anonymization is not a good method to anonymize high-dimensional datasets.</li>
-</ul>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>It has also been shown that k-anonymity can skew the results of a data set if it disproportionately suppresses and generalizes data points with unrepresentative characteristics</li>
-</ul>
+<p>On notera qu'on peut attaquer un jeu de données anonymisé selon deux scenarii pour un individu isolé:</p>
+<ol>
+<li><strong>Le scenario du procureur (prosecutor)</strong>: On sait qu'un individu identifié donné est présent dans la base de données anonymisée et on souhaite retrouver ses données.</li>
+<li><strong>Le scenario du journaliste</strong>: On ne cherche à identifier un individu quel qu'il soit.</li>
+</ol>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2528029/pdf/627.S1067502708001047.main.pdf">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2528029/pdf/627.S1067502708001047.main.pdf</a></p>
 
 </div>
 </div></section></section><section><section>
