@@ -14733,7 +14733,7 @@ had reported characteristics that likely made them unique based only on {5-digit
 <p>On notera qu'on peut attaquer un jeu de données anonymisé selon deux scenarii pour un individu isolé:</p>
 <ol>
 <li><strong>Le scenario du procureur (prosecutor)</strong>: On sait qu'un individu identifié donné est présent dans la base de données anonymisée et on souhaite retrouver ses données.</li>
-<li><strong>Le scenario du journaliste</strong>: On ne cherche à identifier un individu quel qu'il soit.</li>
+<li><strong>Le scenario du journaliste</strong>: On cherche à identifier un individu quel qu'il soit.</li>
 </ol>
 <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2528029/pdf/627.S1067502708001047.main.pdf">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2528029/pdf/627.S1067502708001047.main.pdf</a></p>
 
@@ -14745,8 +14745,63 @@ had reported characteristics that likely made them unique based only on {5-digit
 <li>Déterminez le paramètre K associé à votre anonymisation</li>
 <li>Décrivez sur papier un algorithme simple pour automatiser la procédure de K-anonymisation (vous pouvez l'implémenter en bonus)</li>
 <li>5-anonymisez ces données (manuellement, à partir du package <strong>anonymity</strong> ou de votre propre implémentation)</li>
-<li>En vous servant des différentes limites de la K-anonymisation, tâchez de retrouver le plus d'informations possibles sur les patients du jeu de données K-anonymisé</li>
+<li>En vous servant des différentes limites de la K-anonymisation, tâchez de retrouver le plus d'informations possibles sur les patients du jeu de données K-anonymisé (<em>scenario du journaliste</em>)</li>
+<li>Que pouvez vous dire en particulier des patients suivants (<em>scenario du procureur</em>):</li>
 </ol>
+<table>
+<thead><tr>
+<th style="text-align:left">nom</th>
+<th style="text-align:left">prenom</th>
+<th style="text-align:right">sexe</th>
+<th style="text-align:right">age</th>
+<th style="text-align:right">code_postal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">SAIRON</td>
+<td style="text-align:left">LISA</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">21</td>
+<td style="text-align:right">69500</td>
+</tr>
+<tr>
+<td style="text-align:left">LONGFORT</td>
+<td style="text-align:left">SANDRA</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">19</td>
+<td style="text-align:right">69360</td>
+</tr>
+<tr>
+<td style="text-align:left">CLEREMBAULT</td>
+<td style="text-align:left">MARILOU</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">36</td>
+<td style="text-align:right">69550</td>
+</tr>
+<tr>
+<td style="text-align:left">SAINDOU</td>
+<td style="text-align:left">EDDY</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">73</td>
+<td style="text-align:right">69008</td>
+</tr>
+<tr>
+<td style="text-align:left">RAUZET</td>
+<td style="text-align:left">DAVID</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">45</td>
+<td style="text-align:right">69110</td>
+</tr>
+<tr>
+<td style="text-align:left">CAUDE</td>
+<td style="text-align:left">AMIR</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">27</td>
+<td style="text-align:right">69450</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div></section></section><section><section>
@@ -14767,7 +14822,7 @@ had reported characteristics that likely made them unique based only on {5-digit
 <h2 id="Etape-4---Cr&#233;er-le-doute:--la-confidentialit&#233;-diff&#233;rentielle">Etape 4 - Cr&#233;er le doute:  la confidentialit&#233; diff&#233;rentielle<a class="anchor-link" href="#Etape-4---Cr&#233;er-le-doute:--la-confidentialit&#233;-diff&#233;rentielle">&#182;</a></h2><ul>
 <li>Utiliser <a href="https://github.com/IBM/differential-privacy-library/blob/main/notebooks/exploration.ipynb">https://github.com/IBM/differential-privacy-library/blob/main/notebooks/exploration.ipynb</a> ?</li>
 <li>Quelles sont limites ?</li>
-<li>Utilisez des données issues de confdiff  et tâchez de savoir combien d'individus vous arrivez à identifier de manière unique et pour combien vous savez retrouver le nom, prénom0</li>
+<li>Utilisez des données issues de confdiff  et tâchez de savoir combien d'individus vous arrivez à identifier de manière unique et pour combien vous savez retrouver le nom, prénom.</li>
 </ul>
 
 </div>
