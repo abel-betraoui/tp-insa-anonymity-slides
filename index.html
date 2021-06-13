@@ -14385,7 +14385,7 @@ div.jp-OutputPrompt {
 <div class="slides"><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="TP-3:-Donn&#233;es-personnelles,-donn&#233;es-sensibles-&amp;-anonymisation">TP 3: Donn&#233;es personnelles, donn&#233;es sensibles &amp; anonymisation<a class="anchor-link" href="#TP-3:-Donn&#233;es-personnelles,-donn&#233;es-sensibles-&amp;-anonymisation">&#182;</a></h1><p>Le code est à récupérer depuis le git:</p>
+<h1 id="TP:-Donn&#233;es-personnelles,-donn&#233;es-sensibles-&amp;-anonymisation">TP: Donn&#233;es personnelles, donn&#233;es sensibles &amp; anonymisation<a class="anchor-link" href="#TP:-Donn&#233;es-personnelles,-donn&#233;es-sensibles-&amp;-anonymisation">&#182;</a></h1><p>Le code est à récupérer depuis le git:</p>
 
 <pre><code>git clone https://github.com/abel-betraoui/tp-insa-anonymity.git</code></pre>
 <p><img src="images/insa.svg" alt="insa_logo"></p>
@@ -14482,7 +14482,7 @@ Ce sont des informations qui révèlent la prétendue <strong>origine raciale ou
 <h1 id="Objectifs-du-TP">Objectifs du TP<a class="anchor-link" href="#Objectifs-du-TP">&#182;</a></h1><ul>
 <li><p>Vous souhaitez évaluer l'influence de plusieurs facteurs sur la <strong>tension arterielle</strong> d'une cohorte d'ancien fumeurs. Ces facteurs sont l'<strong>âge</strong>, le <strong>sexe</strong>, la <strong>consommation d'alcool</strong>, l'<strong>activité physique</strong>, un facteur environnemental (ici résumé par leur <strong>localisation géographique</strong>).</p>
 </li>
-<li><p>Vous avez constitué un fichier de données décrivant <strong>1077 patients</strong> à partir duquel vous souhaitez réaliser votre étude.</p>
+<li><p>Vous avez constitué un fichier de données de patients à partir duquel vous souhaitez réaliser votre étude.</p>
 </li>
 <li><p>Vous souhaitez traiter ces données en faisant attention à la confidentialité des données personnelles et sensibles des patients. A cette fin, vous allez vous mettre dans la peau d'une personne malveillante pour voir à quel point les méthodes que vous mettrez en oeuvre résisteront à la créativité humaine.</p>
 </li>
@@ -14780,11 +14780,11 @@ had reported characteristics that likely made them unique based only on {5-digit
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Etape-3---Se-fondre-dans-la-masse-:-la-K-anonymisation">Etape 3 - Se fondre dans la masse : la K-anonymisation<a class="anchor-link" href="#Etape-3---Se-fondre-dans-la-masse-:-la-K-anonymisation">&#182;</a></h2><ol>
+<h2 id="Anonymisation">Anonymisation<a class="anchor-link" href="#Anonymisation">&#182;</a></h2><ol>
 <li>Déterminez le paramètre K associé à votre anonymisation</li>
 <li>Décrivez sur papier un algorithme simple pour automatiser la procédure de K-anonymisation (vous pouvez l'implémenter en bonus)</li>
-<li>5-anonymisez ces données (manuellement, à partir du package <strong>anonymity</strong> ou de votre propre implémentation)</li>
-<li>En vous servant des différentes limites de la K-anonymisation, tâchez de retrouver le plus d'informations possibles sur les patients du jeu de données K-anonymisé (<em>scenario du journaliste</em>)</li>
+<li>5-anonymisez ces données (manuellement, à partir du package anonymity <a href="https://abel-betraoui.github.io/tp-insa-anonymity/anonymity.html#module-anonymity">(doc)</a> ou de votre propre implémentation)</li>
+<li>En vous servant des différentes limites de la K-anonymisation, tâchez de retrouver le plus d'informations possibles sur les patients du jeu de données K-anonymisé</li>
 </ol>
 
 </div>
@@ -14852,8 +14852,9 @@ had reported characteristics that likely made them unique based only on {5-digit
 <li>Pouvez-vous répondre à ces questions ?<ul>
 <li>Combien de patients ont participé à l'étude ?</li>
 <li>Combien de patients ont une tension artérielle très élevée ?</li>
-<li>Comparez le nombre de patients avec une tension artérielle élevée ou très élevée selon si ils ont une consomation d'alcool élevée ou non ?</li>
-<li>Les patients de Villeurbanne (69100) ont ils une tension artérielle plus élevée que celle des autres ?</li>
+<li>Parmi les patients de 60 ans et plus avec une consommation élevée d'alcool, quel pourcentage a
+une tension artérielle très élevée ?</li>
+<li>Quel est le taux de tension artérielle "très élevée" à Villeurbanne (69100)?</li>
 </ul>
 </li>
 </ol>
@@ -14932,11 +14933,19 @@ $$L(x|b) = \frac{1}{2b}e^{-\frac{\lvert x \rvert}{b}}$$</p>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Etape-4---Cr&#233;er-le-doute:--la-confidentialit&#233;-diff&#233;rentielle">Etape 4 - Cr&#233;er le doute:  la confidentialit&#233; diff&#233;rentielle<a class="anchor-link" href="#Etape-4---Cr&#233;er-le-doute:--la-confidentialit&#233;-diff&#233;rentielle">&#182;</a></h2><ul>
-<li>En vous inspirant de <a href="https://github.com/OpenMined/PyDP/blob/dev/examples/Tutorial_3-Titanic_demo/titanic_notebook.ipynb">ce notebook</a>, répondez aux questions suivantes et comparez les résultats obtenus avec ou sans confidentialité différentielle ?<ul>
+<li><p>En vous inspirant de <a href="https://github.com/OpenMined/PyDP/blob/dev/examples/Tutorial_3-Titanic_demo/titanic_notebook.ipynb">ce notebook</a>, répondez aux questions suivantes et comparez les résultats obtenus <strong>avec ou sans</strong> confidentialité différentielle <a href="https://pydp.readthedocs.io/en/latest/pydp.html">(doc)</a> ?</p>
+<ul>
 <li>Combien de patients ont participé à l'étude ?</li>
 <li>Combien de patients ont une tension artérielle très élevée ?</li>
-<li>Comparez le nombre de patients avec une tension artérielle élevée ou très élevée selon si ils ont une consomation d'alcool élevée ou non ?</li>
-<li>Les patients de villeurbanne ont ils une tension artérielle plus élevée que celle des autres ?</li>
+<li>Parmi les patients de 60 ans et plus avec une consommation élevée d'alcool, quel pourcentage a une tension artérielle très élevée ?</li>
+<li>Quel est le taux de tension artérielle "très élevée" à Villeurbanne (69100)?</li>
+</ul>
+</li>
+<li><p>Utilisez la fonction result au lieu de quick result.</p>
+<ul>
+<li>Quelle est l'influence de epsilon sur le résultat final ?</li>
+<li>Que se passe t-il lorsque le privacy budget est consommé ?</li>
+<li>Pourquoi selon vous ?</li>
 </ul>
 </li>
 </ul>
