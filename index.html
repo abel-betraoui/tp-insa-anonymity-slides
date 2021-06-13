@@ -14385,11 +14385,23 @@ div.jp-OutputPrompt {
 <div class="slides"><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="TP-3:-Donn&#233;es-personnelles,-donn&#233;es-sensibles-&amp;-anonymisation">TP 3: Donn&#233;es personnelles, donn&#233;es sensibles &amp; anonymisation<a class="anchor-link" href="#TP-3:-Donn&#233;es-personnelles,-donn&#233;es-sensibles-&amp;-anonymisation">&#182;</a></h1><p>Les slides sont accessibles à cette adresse: <a href="https://abel-betraoui.github.io/tp-insa-anonymity-slides">https://abel-betraoui.github.io/tp-insa-anonymity-slides</a>.</p>
-<p><img src="images/insa.svg" alt="bored"></p>
+<h1 id="TP-3:-Donn&#233;es-personnelles,-donn&#233;es-sensibles-&amp;-anonymisation">TP 3: Donn&#233;es personnelles, donn&#233;es sensibles &amp; anonymisation<a class="anchor-link" href="#TP-3:-Donn&#233;es-personnelles,-donn&#233;es-sensibles-&amp;-anonymisation">&#182;</a></h1><p>Le code est à récupérer depuis le git:</p>
+
+<pre><code>git clone https://github.com/abel-betraoui/tp-insa-anonymity.git</code></pre>
+<p><img src="images/insa.svg" alt="insa_logo"></p>
 
 </div>
-</div></section></section><section><section>
+</div><aside class="notes">
+
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><a href="https://data.grandbesancon.fr/opendata/dataset/publicationsEtatCivilNaissance">https://data.grandbesancon.fr/opendata/dataset/publicationsEtatCivilNaissance</a></li>
+</ul>
+
+</div>
+</div>
+</aside></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Donn&#233;es-personnelles">Donn&#233;es personnelles<a class="anchor-link" href="#Donn&#233;es-personnelles">&#182;</a></h2><p>Une donnée personnelle est toute information se rapportant à une personne physique identifiée ou identifiable. Mais, parce qu’elles concernent des personnes, celles-ci doivent en conserver la maîtrise.</p>
@@ -14484,12 +14496,26 @@ Ce sont des informations qui révèlent la prétendue <strong>origine raciale ou
 <li>chiffrement</li>
 <li>droits utilisateurs</li>
 <li>sécurité réseau </li>
-<li>...</li>
+<li><p>remote execution</p>
+</li>
+<li><p>...</p>
+</li>
 </ul>
 <p>mais ce n'est pas suffisant.</p>
 
 </div>
-</div></section><section>
+</div><aside class="notes">
+
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><a href="https://neptune.ai/blog/using-differential-privacy-to-build-secure-models-tools-methods-best-practices">https://neptune.ai/blog/using-differential-privacy-to-build-secure-models-tools-methods-best-practices</a></li>
+<li><a href="https://www.openmined.org/">https://www.openmined.org/</a></li>
+</ul>
+
+</div>
+</div>
+</aside></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Base-d'identification">Base d'identification<a class="anchor-link" href="#Base-d'identification">&#182;</a></h2><p>Afin de chercher à ré-identifier vos patients vous constituez une base d'identification à partir:</p>
@@ -14504,6 +14530,7 @@ Ce sont des informations qui révèlent la prétendue <strong>origine raciale ou
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>exemple de données personnelles qui pourraient être obenues légalement: <a href="https://letmegooglethat.com/?q=achat+fichier+client">https://letmegooglethat.com/?q=achat+fichier+client</a></li>
+<li>exemple de données personnelles qui pourraient être obenues illégalement (e.g. data breaches): <a href="https://haveibeenpwned.com/PwnedWebsites#Collection1">https://haveibeenpwned.com/PwnedWebsites#Collection1</a></li>
 </ul>
 
 </div>
@@ -14521,9 +14548,9 @@ Ce sont des informations qui révèlent la prétendue <strong>origine raciale ou
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>exemple de données qui pourraient être obtenues illégalement si elles étaient compromises : <a href="https://www.reuters.com/investigates/special-report/tobacco-iqos-device/">https://www.reuters.com/investigates/special-report/tobacco-iqos-device/</a>. </li>
+<li>exemple de données personnelles très informatives qui pourraient être obtenues illégalement si elles étaient compromises : <a href="https://www.reuters.com/investigates/special-report/tobacco-iqos-device/">https://www.reuters.com/investigates/special-report/tobacco-iqos-device/</a>. </li>
 </ul>
-<p><img src="images/ecig_reuters.png" alt="reuters_article"></p>
+<p><img src="images/ecig_reuters.png" width="600" alt="reuters_article"></p>
 
 </div>
 </div></section><section>
@@ -14537,9 +14564,11 @@ Ce sont des informations qui révèlent la prétendue <strong>origine raciale ou
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Etape-0:-R&#233;cup&#233;rez-le-code-&amp;-les-jeux-de-donn&#233;es">Etape 0: R&#233;cup&#233;rez le code &amp; les jeux de donn&#233;es<a class="anchor-link" href="#Etape-0:-R&#233;cup&#233;rez-le-code-&amp;-les-jeux-de-donn&#233;es">&#182;</a></h2><p>Le code est à cloner depuis le git:</p>
-
-<pre><code>git clone https://github.com/abel-betraoui/tp-insa-anonymity.git</code></pre>
+<h2 id="Etape-0:-R&#233;cup&#233;rez-le-code-&amp;-les-jeux-de-donn&#233;es">Etape 0: R&#233;cup&#233;rez le code &amp; les jeux de donn&#233;es<a class="anchor-link" href="#Etape-0:-R&#233;cup&#233;rez-le-code-&amp;-les-jeux-de-donn&#233;es">&#182;</a></h2><p>Vous trouverez dans le repo git:</p>
+<ul>
+<li>La solution du TP</li>
+<li>Le package <strong>anonymity</strong> (quelques fonctions dont nous aurons besoin plus tard dans le TP) </li>
+</ul>
 <p>Vous disposez de deux fichiers:</p>
 <ul>
 <li><strong>data/personal_data.csv</strong>: votre base d'identification</li>
@@ -14603,10 +14632,11 @@ Il s’agit d’une solution, parmi d’autres, pour pouvoir exploiter des donn�
 <li>Que feriez vous pour améliorer cette approche ?</li>
 </ul>
 </li>
-<li>Mettez en oeuvre vos idées. Pour rappel, dans le cadre de votre étude, il vous faut conserver au minimum sujet des patients:<ul>
+<li>Mettez en oeuvre vos idées. Pour rappel, dans le cadre de votre étude, il vous faut conserver au minimum au sujet des patients:<ul>
 <li>une idée de l'âge</li>
 <li>le genre</li>
 <li>une idée de la localisation géographique</li>
+<li>consommation d'alcool, activité physique &amp; tension artérielle</li>
 </ul>
 </li>
 </ol>
@@ -14679,16 +14709,25 @@ had reported characteristics that likely made them unique based only on {5-digit
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div><aside class="notes">
+
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000167">https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000167</a></p>
+
+</div>
+</div>
+</aside></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="k-anonymisation">k-anonymisation<a class="anchor-link" href="#k-anonymisation">&#182;</a></h1><ul>
 <li><p>Réduire "le niveau de détail des données" de telle sorte qu’il y ait au moins k n-uplets différents qui ont la même valeur de quasi-identifiant. On parle alors de <strong>classe d'équivalence</strong>.</p>
 </li>
-<li><p>Deux mécanismes principaux permettent de k-anonymiser:</p>
+<li><p>Trois mécanismes principaux permettent de k-anonymiser:</p>
 <ul>
 <li><strong>Suppression</strong>: On supprime certaines variables qui qualifient un individu (si on peut se le permettre).</li>
 <li><strong>Généralisation</strong>: On regroupe certaines valeurs de variables.  </li>
+<li><strong>Randomisation</strong>: On permute / ajoute du bruit à certaines valeurs en tentant de conserver les distributions d'intérêt (plus complexe à mettre en oeuvre).</li>
 </ul>
 </li>
 </ul>
@@ -14746,62 +14785,78 @@ had reported characteristics that likely made them unique based only on {5-digit
 <li>Décrivez sur papier un algorithme simple pour automatiser la procédure de K-anonymisation (vous pouvez l'implémenter en bonus)</li>
 <li>5-anonymisez ces données (manuellement, à partir du package <strong>anonymity</strong> ou de votre propre implémentation)</li>
 <li>En vous servant des différentes limites de la K-anonymisation, tâchez de retrouver le plus d'informations possibles sur les patients du jeu de données K-anonymisé (<em>scenario du journaliste</em>)</li>
-<li>Que pouvez vous dire en particulier des patients suivants (<em>scenario du procureur</em>):</li>
+</ol>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol>
+<li>Que pouvez vous dire en particulier des patients suivants en ne vous servant que du jeu de données K-anonymisé (<em>scenario du procureur</em>)? </li>
 </ol>
 <table>
 <thead><tr>
 <th style="text-align:left">nom</th>
 <th style="text-align:left">prenom</th>
-<th style="text-align:right">sexe</th>
 <th style="text-align:right">age</th>
+<th style="text-align:right">sexe</th>
 <th style="text-align:right">code_postal</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">SAIRON</td>
-<td style="text-align:left">LISA</td>
-<td style="text-align:right">2</td>
-<td style="text-align:right">21</td>
-<td style="text-align:right">69500</td>
-</tr>
-<tr>
-<td style="text-align:left">LONGFORT</td>
-<td style="text-align:left">SANDRA</td>
-<td style="text-align:right">2</td>
+<td style="text-align:left">LEMERLE</td>
+<td style="text-align:left">NELLIE</td>
 <td style="text-align:right">19</td>
-<td style="text-align:right">69360</td>
-</tr>
-<tr>
-<td style="text-align:left">CLEREMBAULT</td>
-<td style="text-align:left">MARILOU</td>
 <td style="text-align:right">2</td>
-<td style="text-align:right">36</td>
-<td style="text-align:right">69550</td>
+<td style="text-align:right">69430</td>
 </tr>
 <tr>
-<td style="text-align:left">SAINDOU</td>
-<td style="text-align:left">EDDY</td>
-<td style="text-align:right">1</td>
-<td style="text-align:right">73</td>
-<td style="text-align:right">69008</td>
+<td style="text-align:left">KEHYRIAN</td>
+<td style="text-align:left">ELODIE</td>
+<td style="text-align:right">20</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">69100</td>
 </tr>
 <tr>
-<td style="text-align:left">RAUZET</td>
-<td style="text-align:left">DAVID</td>
-<td style="text-align:right">1</td>
-<td style="text-align:right">45</td>
-<td style="text-align:right">69110</td>
+<td style="text-align:left">RAYNAL</td>
+<td style="text-align:left">MARINA</td>
+<td style="text-align:right">70</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">69620</td>
 </tr>
 <tr>
-<td style="text-align:left">CAUDE</td>
-<td style="text-align:left">AMIR</td>
+<td style="text-align:left">GLOTIN</td>
+<td style="text-align:left">SIMON</td>
+<td style="text-align:right">72</td>
 <td style="text-align:right">1</td>
-<td style="text-align:right">27</td>
-<td style="text-align:right">69450</td>
+<td style="text-align:right">69200</td>
+</tr>
+<tr>
+<td style="text-align:left">HASCOET</td>
+<td style="text-align:left">MARION</td>
+<td style="text-align:right">57</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">69840</td>
+</tr>
+<tr>
+<td style="text-align:left">GUILLAUME</td>
+<td style="text-align:left">CHANTAL</td>
+<td style="text-align:right">68</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">69003</td>
 </tr>
 </tbody>
 </table>
+<ol>
+<li>Pouvez-vous répondre à ces questions ?<ul>
+<li>Combien de patients ont participé à l'étude ?</li>
+<li>Combien de patients ont une tension artérielle très élevée ?</li>
+<li>Comparez le nombre de patients avec une tension artérielle élevée ou très élevée selon si ils ont une consomation d'alcool élevée ou non ?</li>
+<li>Les patients de Villeurbanne (69100) ont ils une tension artérielle plus élevée que celle des autres ?</li>
+</ul>
+</li>
+</ol>
 
 </div>
 </div></section></section><section><section>
@@ -14819,10 +14874,83 @@ had reported characteristics that likely made them unique based only on {5-digit
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="La-confidentialit&#233;-diff&#233;rentielle">La confidentialit&#233; diff&#233;rentielle<a class="anchor-link" href="#La-confidentialit&#233;-diff&#233;rentielle">&#182;</a></h2><ul>
+<li><strong>Intuition:</strong></li>
+</ul>
+<blockquote><p>“You will not be affected, adversely or otherwise, by allowing your data to be used in any study or analysis, no matter what other studies, data sets, or information sources, are available.”</p>
+<p>"Differential privacy addresses the paradox of learning nothing about an individual while learning useful information about a population."</p>
+<p>"Differential privacy will take the view that it was not, with the rationale that the impact on the smoker is the same independent of whether or not he was in the study"</p>
+</blockquote>
+<p><a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf">https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf</a></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="D&#233;finition">D&#233;finition<a class="anchor-link" href="#D&#233;finition">&#182;</a></h2><ul>
+<li>La confidentialité différentielle s'appuie sur une définition mathématique de la perte de "privacy" associée à toute requête sur une base de données. Un mécanisme M est dit "differentially private" si $\forall S$ sous-ensemble de l'image de M, et $\forall x, y$ jeu de données (entrées de M):</li>
+</ul>
+$$ P[ M(x) \in S] \leq e^{\epsilon} P[ M(y) \in S] + \delta $$<ul>
+<li>M prend en entrée un jeu de données et produit une tranformation à partir de ces données (une sorte de moyenne, une sorte d'histogramme, ...). M doit être stochastique pour être "differentially private".</li>
+</ul>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+$$ P[ M(x) \in S] \leq e^{\epsilon} P[ M(y) \in S] + \delta $$<ul>
+<li>x, y sont des jeux de données qui diffèrent d'au plus une entrée (individu). Souvent décrit comme $\lVert x - y \rVert_1 = 1$</li>
+<li>$\epsilon$ et $\delta$ sont des paramètres qui permettent d'ajuster l'équilibre entre risque d'identification d'un individu et exploitation des données.<ul>
+<li>$ \delta$ probabilité de "data breach". Doit être très faible.</li>
+<li>$\epsilon$ A l'exception de l'évenement de "data breach", la probabilité d'obtenir un résultat différent de M en l'absence d'un individu dans la base est au plus (en espérance) $e^{\epsilon}$. Des valeurs raisonnables de $\epsilon$ seraient comprises entre 0 &amp; 5. Au dela de 10, le bruit rend M inutile.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="L1-sensitivity">L1-sensitivity<a class="anchor-link" href="#L1-sensitivity">&#182;</a></h2><blockquote><p>Pour x, y tel que $\lVert x - y \rVert_1 \leq 1 $ et pour une requête $f$,</p>
+$$ \Delta f = max \lVert f(x) - f(y) \rVert_1 $$
+</blockquote>
+<h2 id="La-distribution-de-Laplace">La distribution de Laplace<a class="anchor-link" href="#La-distribution-de-Laplace">&#182;</a></h2><blockquote><p>Distribution de Laplace (centrée en 0)
+$$L(x|b) = \frac{1}{2b}e^{-\frac{\lvert x \rvert}{b}}$$</p>
+</blockquote>
+<center>
+
+<img src="images/laplace.png" width="240" alt="laplace_distribution">
+</center>
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="M&#233;canisme-de-Laplace">M&#233;canisme de Laplace<a class="anchor-link" href="#M&#233;canisme-de-Laplace">&#182;</a></h2><p>Le mécanisme $M_L(f)$ obtenu par l'ajout d'un bruit qui suit une distribution de Laplace de paramètre $\frac{\Delta f}{\epsilon}$ à une fonction $f$ est $\epsilon$ -differentially private.</p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Etape-4---Cr&#233;er-le-doute:--la-confidentialit&#233;-diff&#233;rentielle">Etape 4 - Cr&#233;er le doute:  la confidentialit&#233; diff&#233;rentielle<a class="anchor-link" href="#Etape-4---Cr&#233;er-le-doute:--la-confidentialit&#233;-diff&#233;rentielle">&#182;</a></h2><ul>
-<li>Utiliser <a href="https://github.com/IBM/differential-privacy-library/blob/main/notebooks/exploration.ipynb">https://github.com/IBM/differential-privacy-library/blob/main/notebooks/exploration.ipynb</a> ?</li>
-<li>Quelles sont limites ?</li>
-<li>Utilisez des données issues de confdiff  et tâchez de savoir combien d'individus vous arrivez à identifier de manière unique et pour combien vous savez retrouver le nom, prénom.</li>
+<li>En vous inspirant de <a href="https://github.com/OpenMined/PyDP/blob/dev/examples/Tutorial_3-Titanic_demo/titanic_notebook.ipynb">ce notebook</a>, répondez aux questions suivantes et comparez les résultats obtenus avec ou sans confidentialité différentielle ?<ul>
+<li>Combien de patients ont participé à l'étude ?</li>
+<li>Combien de patients ont une tension artérielle très élevée ?</li>
+<li>Comparez le nombre de patients avec une tension artérielle élevée ou très élevée selon si ils ont une consomation d'alcool élevée ou non ?</li>
+<li>Les patients de villeurbanne ont ils une tension artérielle plus élevée que celle des autres ?</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Quelques très bonnes ressources sur la confidentialité différentielle:</p>
+<ul>
+<li><a href="http://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html">http://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html</a></li>
+<li><a href="https://www.youtube.com/watch?v=jylloCa0iWA&amp;list=PLie7a1OUTSagV55BZIvBckZJrDXQ9zl6i">https://www.youtube.com/watch?v=jylloCa0iWA&amp;list=PLie7a1OUTSagV55BZIvBckZJrDXQ9zl6i</a></li>
+<li><a href="http://www.tdp.cat/issues11/tdp.a124a13.pdf">http://www.tdp.cat/issues11/tdp.a124a13.pdf</a></li>
+<li><a href="https://cpb-us-w2.wpmucdn.com/sites.gatech.edu/dist/c/679/files/2017/08/lecture2.pdf">https://cpb-us-w2.wpmucdn.com/sites.gatech.edu/dist/c/679/files/2017/08/lecture2.pdf</a></li>
 </ul>
 
 </div>
@@ -14830,35 +14958,11 @@ had reported characteristics that likely made them unique based only on {5-digit
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Sources">Sources<a class="anchor-link" href="#Sources">&#182;</a></h1><ul>
-<li><a href="https://www.cnil.fr/fr/les-fichiers-detat-civil">https://www.cnil.fr/fr/les-fichiers-detat-civil</a></li>
-<li><a href="https://www.cnil.fr/fr/lanonymisation-de-donnees-personnelles">https://www.cnil.fr/fr/lanonymisation-de-donnees-personnelles</a></li>
-<li><a href="https://www.cnil.fr/fr/rnipp-repertoire-national-didentification-des-personnes-physiques-0">https://www.cnil.fr/fr/rnipp-repertoire-national-didentification-des-personnes-physiques-0</a></li>
-<li><a href="https://data.grandbesancon.fr/opendata/dataset/publicationsEtatCivilNaissance">https://data.grandbesancon.fr/opendata/dataset/publicationsEtatCivilNaissance</a></li>
-<li><a href="https://developers.facebook.com/docs/graph-api/reference/user/?locale=fr_FR#Reading">https://developers.facebook.com/docs/graph-api/reference/user/?locale=fr_FR#Reading</a></li>
-<li><a href="https://drees.solidarites-sante.gouv.fr/IMG/pdf/4_methodes_d_anonymisation.pdf">https://drees.solidarites-sante.gouv.fr/IMG/pdf/4_methodes_d_anonymisation.pdf</a></li>
-<li><a href="https://www.marketingconnect.fr/achat-fichier/">https://www.marketingconnect.fr/achat-fichier/</a></li>
-<li><a href="https://www.datadrive.fr/btoc/">https://www.datadrive.fr/btoc/</a></li>
-<li><a href="https://www.easyfichiers.com/">https://www.easyfichiers.com/</a></li>
-<li><a href="https://www.cartegie.com/data/bases-btob">https://www.cartegie.com/data/bases-btob</a></li>
-<li><a href="https://www.spot-hit.fr/base-prospects-opt-in">https://www.spot-hit.fr/base-prospects-opt-in</a></li>
-<li><a href="https://www.cnil.fr/fr/les-durees-de-conservation-des-donnees">https://www.cnil.fr/fr/les-durees-de-conservation-des-donnees</a></li>
+<ul>
 <li><a href="https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_fr.pdf">https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp216_fr.pdf</a></li>
-<li><a href="https://epic.org/privacy/reidentification/Sweeney_Article.pdf">https://epic.org/privacy/reidentification/Sweeney_Article.pdf</a></li>
-<li><a href="https://drees.solidarites-sante.gouv.fr/IMG/pdf/4_methodes_d_anonymisation.pdf">https://drees.solidarites-sante.gouv.fr/IMG/pdf/4_methodes_d_anonymisation.pdf</a></li>
 <li><a href="https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices">https://www.enisa.europa.eu/publications/pseudonymisation-techniques-and-best-practices</a></li>
 <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2528029/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2528029/</a></li>
-<li><a href="https://www.cs.auckland.ac.nz/research/groups/ssg/pastbib/pastpapers/bayardo05data.pdf">https://www.cs.auckland.ac.nz/research/groups/ssg/pastbib/pastpapers/bayardo05data.pdf</a></li>
-<li><a href="https://core.ac.uk/download/pdf/207542776.pdf">https://core.ac.uk/download/pdf/207542776.pdf</a></li>
-<li><a href="https://github.com/Nuclearstar/K-Anonymity/blob/master/k-Anonymity.ipynb">https://github.com/Nuclearstar/K-Anonymity/blob/master/k-Anonymity.ipynb</a></li>
-<li><a href="https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf">https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf</a></li>
-<li><a href="https://fr.wikipedia.org/wiki/Confidentialit%C3%A9_diff%C3%A9rentielle">https://fr.wikipedia.org/wiki/Confidentialit%C3%A9_diff%C3%A9rentielle</a></li>
 <li><a href="https://desfontain.es/privacy/k-anonymity.html">https://desfontain.es/privacy/k-anonymity.html</a></li>
-<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2528029/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2528029/</a></li>
-<li><a href="https://github.com/Nuclearstar/K-Anonymity/blob/master/k-Anonymity.ipynb">https://github.com/Nuclearstar/K-Anonymity/blob/master/k-Anonymity.ipynb</a></li>
-<li><a href="https://arturo102964.medium.com/differential-privacy-with-python-35ea710facd6">https://arturo102964.medium.com/differential-privacy-with-python-35ea710facd6</a></li>
-<li><a href="https://www.reuters.com/investigates/special-report/tobacco-iqos-device/">https://www.reuters.com/investigates/special-report/tobacco-iqos-device/</a></li>
-<li><a href="http://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html">http://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html</a></li>
 </ul>
 
 </div>
